@@ -1,0 +1,16 @@
+ALGORITHM vecteurs_orthogonaux
+VAR
+ v1 : ARRAY_OF_INTEGER[]
+ v2 : ARRAY_OF_INTEGER[]
+    var i ,j : INTEGER
+
+BEGIN
+    FOR i FROM 0 TO v1.length -1 STEP 1  DO
+    FOR j FROM 0 TO v1.length -1 STEP 1  DO
+        dot_product (v1[i] , v2[j] , ps)
+        IF (ps = 0) THEN
+             Write(v1[i]," and " ,v2[j] , "sont orthogonaux" )
+        END_IF
+    END_FOR
+    END_FOR
+END
